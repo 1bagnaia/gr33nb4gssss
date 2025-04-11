@@ -1,0 +1,8 @@
+# Archivos de construcción
+/public/
+.resources/
+
+# Configuraciones locales
+hugo_stats.json
+.DS_Store
+Thumbs.db
