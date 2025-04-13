@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="inicio">
+        <img src="images/ELEPHANT.png" alt="Elephant" class="elephant-img" draggable="false">
+        <img src="images/flooroftheabyss.png" alt="Floor" class="floor-img" draggable="false">
+        
+        <!-- Cambiamos a la estructura del ejemplo -->
+        <div class="gif-container">
+            <img src="images/igorportfolio2.gif" alt="Igor" 
+                 onmouseover="playSoundAndChangeImage(this, 'sounds/hover.mp3', 'images/igorportfolio2a.gif')"
+                 onmouseout="resetImage(this, 'images/igorportfolio2.gif')"
+                 class="gif-igor" draggable="false">
+        </div>
+    </section>
+
+    <!-- Audio como en el ejemplo -->
+    <audio id="hover-audio" preload="auto">
+        <source src="sounds/hover.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
